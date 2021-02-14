@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Alex CSV File Upload</title>
+  <!-- instructions here: https://getbootstrap.com/docs/5.0/getting-started/introduction/ -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Upload your CSV file</h1>
+    <!-- when the submit button is clicked, we send a / -->
+    <form method="POST" action="/upload" enctype="multipart/form-data">
+      <p><input type="file" name="file"></p>
+      <p><input type="submit" value="Submit"></p>
+    </form>
+    <div>
+      <p>Check the result <a href="https://docs.google.com/spreadsheets/d/1SRa9UmX0d37zg2luyQUaWgB7vukotNl8ezWg4gMCPQQ/edit#gid=0" target="_blank">here</a>
+    </div>
+  </div>
+</body>
+
+</html>
